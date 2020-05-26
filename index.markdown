@@ -7,6 +7,8 @@ review_aggregate:
   review_url: https://google.com
   button_label: ''
   svg: ''
-content: ''
+content: Please take a few minutes to share your experience by posting a review for
+  our business.
+page_title: Your feedback is extremely important to us.
 
 ---
