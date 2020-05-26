@@ -3,10 +3,6 @@
 	z-index: 1;
 	background: $light-color;
 
-	&.split {
-		@include flex-row;
-	}
-
 	&.index {
 		.header h6 {
 			color: $light-color;
@@ -36,7 +32,7 @@
 		position: relative;
 
 		.container {
-			width: 70%;
+			width: 60%;
 			margin: 0 auto;
 			display: none;
 			@include flex-column;
@@ -83,61 +79,9 @@
 				width: 100%;
       		}
 		}
-		
-		@media #{$break-large} {
-			width: 50%;
-		}
-	}
-
-	.hero {
-		width: 100vw;
-		height: 100vh;
-		background-color: $dark-color !important;
-		@include prefix(background-size, cover !important, webkit moz);
-		position: absolute;
-		display: none;
-		background-position: left center !important;
-
-		@media #{$break-large} {
-			display: block;
-			position: relative;
-			width: 50vw;
-		}
-
-		h4 {
-			font-size: $base-font-size + 10px;
-			color: $light-color;
-			text-transform: uppercase;
-		}
-	
-		.name {
-			text-align: center;
-			display: none;
-
-			@media #{$break-large} {
-				display: block;
-			}
-
-			a {
-				position: relative;
-				color: #fff;
-				text-decoration: none;
-
-				&:hover {
-			  		color: $secondary-dark-color;	
-				}
-			}
-		}
-
-		@media #{$break-large} {
-			@include flex-column;
-			@include flex-center;
-		}
 	}
 }
 
 @import
-	"pages/index",
-	"pages/work",
-	"pages/projects"
+	"pages/index";
 ;

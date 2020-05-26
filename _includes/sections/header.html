@@ -1,6 +1,4 @@
-{% assign theme = page.page_theme %}
-{% assign type = page.page_type %}
-<header class="header{% if type %} {{ type }}{% endif %}{% if theme == "dark" %} {{ theme }}{% endif %}">
+<header class="header">
   {% assign menu = site.menus.main %}
   {% include sections/nav.html menu="main"%}
 </header>

@@ -1,9 +1,4 @@
-{% assign type = page.page_type %}
-{% assign theme = page.page_theme %}
-<footer class="footer {{ type }}{% if theme == "dark" %} {{ theme }}{% endif %}">
-  {% assign menu = site.menus.social %}
-  {% include sections/social.html menu="social"%}
-
+<footer class="footer">
   <div class="copyright">
     <p>&copy;{{ 'now' | date: "%Y" }} {{ site.title }}</p>
   </div>
