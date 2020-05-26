@@ -13,7 +13,7 @@ fields:
   default: ''
   config:
     required: false
-    wysiwyg: false
+    wysiwyg: true
     schema:
       format: markdown
   label: Content
@@ -25,9 +25,9 @@ fields:
     default: ''
     config:
       required: false
-      wysiwyg: false
+      wysiwyg: true
       schema:
-        format: markdown
+        format: html-blocks
     label: SVG
     description: Paste the code for the SVG icon here.
   - name: label
