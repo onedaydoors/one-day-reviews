@@ -5,13 +5,6 @@ layout: default
 <section class="page-content">
   <div class="container">
     {% for block in page.blocks %}
-    {% assign template = block.template %}
-    {% case template %}
-    {% when 'heading' %}
-        {% include blocks/heading.html %}     
-    {% when 'text-block' %}
-        {% include blocks/text-block.html %}                  
-    {% endcase %}
     {% endfor %}  
   </div>
 </section>
