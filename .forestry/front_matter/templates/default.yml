@@ -1,6 +1,6 @@
 ---
 label: Default
-hide_body: false
+hide_body: true
 fields:
 - name: title
   type: text
@@ -8,6 +8,15 @@ fields:
     required: false
   label: Title
   description: The title of the page.
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
 - name: review_aggregate
   type: field_group_list
   fields:
