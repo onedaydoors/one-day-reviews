@@ -1,27 +1,35 @@
-header {
-}
-
 .wrapper {
 	width: 100%;
 	z-index: 1;
 	background: $light-color;
+	@include flex-column;
+	@include flex-center;
+	min-height: 100vh;
 
 	.page-content {
 		width: 100%;
-		min-height: 100vh;
-		@include flex-column;
-		@include flex-center;
 		position: relative;
 
 		.container {
 			max-width: 800px;
 			width: 100%;
+			padding: 0 $gutter * 2;
 			margin: 0 auto;
 			@include flex-column;
 			@include flex-center;
 
+			header {
+				max-width: 250px;
+				width: 100%;
+				margin-bottom: $gutter * 2;
+				margin-left: 0;
+				margin-right: auto;
+			}
+
 			.top-content {
 				width: 100%;
+				margin-bottom: $gutter * 2;
+				font-size: 18px;
 			}
 
 			.review-link {
@@ -41,15 +49,28 @@ header {
 				@include flex-row;
 				@include flex-align-center;
 
-				svg {
-					fill: $dark-color;
-					height: 50px;
-					width: 50px;
+				.icon {
+					height: 30px;
+					width: 30px;
+					
+					svg {
+						fill: $dark-color;
+						height: 100%;
+						width: 100%;
+					}
+
+					@media #{$break-large} {
+						width: 50px;
+						height: 50px;
+					}
 				}
 
 				.label {
 					color: $brand-color;
 					font-weight: 500;
+					width: 33%; 
+					font-size: $base-font-size + 3px;
+					text-align: left !important;
 				}
 
 				.button {
@@ -59,9 +80,13 @@ header {
 					color: $light-color;
 					text-decoration: none !important;
 					text-transform: uppercase;
-					width: 200px;
+					width: 150px;
 					height: 40px;
 					line-height: 40px;
+
+					@media #{$break-large} {
+						width: 200px;
+					}
 				}
 			}
 		}
