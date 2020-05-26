@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html>
-
   {% include sections/head.html %}
-
-  {% assign layout = page.layout %}
-  {% assign class = page.class %}
-  {% assign theme = page.page_theme %}
-  <body class="template-{{ layout }}" data-barba="wrapper">
-    <div class="loading-container">
-      <div class="loading-screen">
-      </div>
-    </div>
-    {% assign type = page.page_type %}
-    <main class="wrapper{% if type %} {{ type}}{% endif %}" role="main" data-barba="container" data-namespace="{{ class }}">
+  <body>
+    <main class="wrapper" role="main">
       {% include sections/header.html %}
       {{ content }}
       {% include sections/footer.html %}
     </main>
-
     {% include utilities/scripts.html %}
-
   </body>
 
 </html>
