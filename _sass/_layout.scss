@@ -13,17 +13,23 @@
 		.container {
 			max-width: 800px;
 			width: 100%;
-			padding: 0 $gutter * 2;
+			padding: 0 $gutter;
 			margin: 0 auto;
 			@include flex-column;
 			@include flex-center;
 
+			@media #{$break-large} {
+				padding: 0 $gutter * 2;
+			}
+
 			header {
 				max-width: 250px;
 				width: 100%;
-				margin-bottom: $gutter * 2;
-				margin-left: 0;
-				margin-right: auto;
+				margin: $gutter * 3 auto $gutter * 2 0;
+
+				@media #{$break-large} {
+					margin-top: 0;
+				}	
 			}
 
 			.top-content {
