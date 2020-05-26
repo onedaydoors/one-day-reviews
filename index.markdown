@@ -18,5 +18,9 @@ review_aggregate:
 content: Please take a few minutes to share your experience by posting a review for
   our business.
 page_title: Your feedback is extremely important to us.
+page_content: |-
+  Please take a few minutes to share your experience by posting a review for
+
+  our business.
 
 ---
