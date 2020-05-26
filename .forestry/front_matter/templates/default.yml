@@ -2,6 +2,12 @@
 label: Default
 hide_body: false
 fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: The title of the page.
 - name: review_aggregate
   type: field_group_list
   fields:
