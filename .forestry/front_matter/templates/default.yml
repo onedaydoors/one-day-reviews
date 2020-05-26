@@ -2,11 +2,11 @@
 label: Default
 hide_body: true
 fields:
-- name: title
+- name: page_title
   type: text
   config:
     required: false
-  label: Title
+  label: Page Title
   description: The title of the page.
 - name: content
   type: textarea
