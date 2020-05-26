@@ -8,7 +8,7 @@ fields:
     required: false
   label: Page Title
   description: The title of the page.
-- name: content
+- name: page_content
   type: textarea
   default: ''
   config:
