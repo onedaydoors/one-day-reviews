@@ -7,7 +7,6 @@ sections:
 - type: document
   path: index.markdown
   label: Index
-  match: "**/*"
 - type: jekyll-pages
   label: Pages
   create: all
