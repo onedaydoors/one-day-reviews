@@ -1,0 +1,6 @@
+<div class="{{ block.image_layout }} block {% if forloop.index <=1 %}first{% endif %}">
+    <figure>
+      <img src="{{ block.image | relative_url }}"> 
+      <figcaption class="caption">{{ block.caption | downcase }}</figcaption>
+    </figure>
+</div>  

@@ -1,0 +1,53 @@
+---
+label: Work
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  default: ''
+- type: text
+  name: subtitle
+  label: Subtitle
+  default: ''
+- name: services
+  type: field_group_list
+  fields:
+  - name: service
+    type: text
+    config:
+      required: false
+    label: Service
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Services
+- type: datetime
+  name: project_year
+  label: Project Year
+  config:
+    date_format: YYYY
+- type: boolean
+  name: dark_theme
+  label: Dark Theme
+  default: true
+- type: file
+  label: Featured Image
+  name: featured_image
+  description: ''
+- type: blocks
+  name: blocks
+  label: Blocks
+  template_types:
+  - image
+  - text-block
+  description: ''
+pages:
+- _work/curious.md
+- _work/disneyland.md
+- _work/fred-fuerst.md
+- _work/goosby.md
+- _work/jessup.md
+- _work/kantorik.md
+- _work/serman-brands.md

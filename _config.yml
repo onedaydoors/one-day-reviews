@@ -1,0 +1,60 @@
+---
+title: Jesse Winton
+timezone: UTC
+exclude: 
+- node_modules
+- .jekyll-cache
+collections:
+  posts:
+    title: Journal
+    output: true
+  work:
+    title: Projects
+    output: true
+    permalink: "/:collection/:path"
+  proposal:
+    title: Proposals
+    output: true
+    permalink: "/:collection/:path"
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: pages
+  values:
+    is_dark: 
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/journal/:title/"
+    layout: entries
+    is_dark: true
+    is_fixed: true
+- scope:
+    path: ''
+    type: work
+  values:
+    permalink: "/:collection/:title/"
+    layout: project
+    class: work
+- scope:
+    path: work.markdown
+    type: pages
+  values:
+    permalink: "/work"
+    layout: work
+email: jrandallwinton@gmail.com
+description: Multi-disciplined creative living and working in Northern California.
+baseurl: 
+url: https://jessewinton.works
+markdown: kramdown
+sass:
+  style: compressed
+permalinks: pretty
+plugins:
+- jekyll-redirect-from
+- jekyll-menus
+- jekyll-sitemap

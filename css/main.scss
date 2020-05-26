@@ -1,0 +1,86 @@
+---
+---
+
+$base-font-stack: 'Roboto Mono', 'Courier New', Courier, monospace;
+$heading-font-stack: nazare;
+$base-font-size: 12px;
+$base-font-weight: 300;
+$base-line-height: 2;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+$text-color: #222;
+$light-color: #fff;
+$secondary-light-color: #eee;
+$third-light-color: #f9f9f9;
+$dark-color: #111;
+$secondary-dark-color: #222;
+$project-overview: 650px;
+$footer-height: 75px;
+$gutter: 20px;
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  	@each $prefix in $prefixes {
+    	#{'-' + $prefix + '-' + $property}: $value;
+  	}
+  	#{$property}: $value;
+}
+
+$break-large: "screen and (min-width: 40em)";
+
+@mixin flex-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+  	display: flex;
+  	flex-direction: row;
+}
+
+@mixin flex-column {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+  	display: flex;
+  	flex-direction: column;
+}
+
+@mixin flex-center {
+  	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
+	justify-content: center;
+	-webkit-justify-content: center;
+}
+
+@mixin flex-full {
+  	flex: 0 0 100%;
+}
+
+@mixin flex-half {
+  	flex: 0 0 (100% / 2);
+}
+
+@mixin flex-third {
+	flex: 0 0 (100% / 3);
+}
+
+@mixin flex-quarter {
+	flex: 0 0 (100% / 4);
+}
+
+@mixin flex-fifth {
+	flex: 0 0 (100% / 5);
+}
+
+@mixin pin-horizontal-center {
+  	position: absolute;
+	left: 50%;
+	@include prefix(transform, translateX(-50%) !important, webkit moz ms);
+}
+
+@import
+	"base",
+	"layout",
+	"pages",
+	"fonts";
