@@ -1,7 +1,4 @@
 import 'babel-polyfill';
+import { workIndexAnimation } from "./modules/transitions.js";
 
-if (document.querySelector('.work-project-index') !== null) {
-  document.addEventListener('DOMContentLoaded', function() {
-    workIndexAnimation();
-  }, false);
-}
+workIndexAnimation();

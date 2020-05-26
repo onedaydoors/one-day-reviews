@@ -30,10 +30,39 @@ header {
 			}
 
 			.block {
+				background: $secondary-light-color;
+				margin-bottom: $gutter;
+				border: 1px solid $third-light-color;
 				width: 100%;
-				justify-content: space-evenly;
+				height: 100px;
+				padding: 0 $gutter;
+				border-radius: $radius;
+				justify-content: space-between;
 				@include flex-row;
-				@include flex-center;
+				@include flex-align-center;
+
+				svg {
+					fill: $dark-color;
+					height: 50px;
+					width: 50px;
+				}
+
+				.label {
+					color: $brand-color;
+					font-weight: 500;
+				}
+
+				.button {
+					background: $brand-color;
+					border-radius: $radius;
+					text-align: center;
+					color: $light-color;
+					text-decoration: none !important;
+					text-transform: uppercase;
+					width: 200px;
+					height: 40px;
+					line-height: 40px;
+				}
 			}
 		}
 	}

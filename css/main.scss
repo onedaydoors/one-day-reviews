@@ -3,17 +3,19 @@
 
 $base-font-stack: proxima-nova, helvetica, arial, monospace;
 $heading-font-stack: proxima-nova;
-$base-font-size: 12px;
+$base-font-size: 14px;
 $base-font-weight: 300;
 $base-line-height: 2;
 $font-weight-medium: 500;
 $font-weight-bold: 600;
 $text-color: #51565a;
 $light-color: #fff;
-$secondary-light-color: #eee;
+$secondary-light-color: #fcfcfc;
+$third-light-color: #eee;
 $dark-color: #51565a;
 $brand-color: #45bea7;
 $footer-height: 75px;
+$radius: 5px;
 $gutter: 20px;
 
 @mixin prefix($property, $value, $prefixes: ()) {
@@ -49,6 +51,12 @@ $break-large: "screen and (min-width: 40em)";
 	-moz-align-items: center;
 	justify-content: center;
 	-webkit-justify-content: center;
+}
+
+@mixin flex-align-center {
+	align-items: center;
+	-webkit-align-items: center;
+	-moz-align-items: center;
 }
 
 @mixin flex-full {
