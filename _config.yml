@@ -6,16 +6,8 @@ exclude:
 - .jekyll-cache
 collections:
   posts:
-    title: Journal
+    title: Posts
     output: true
-  work:
-    title: Projects
-    output: true
-    permalink: "/:collection/:path"
-  proposal:
-    title: Proposals
-    output: true
-    permalink: "/:collection/:path"
   uploads:
     title: Uploads
     output: true
@@ -29,27 +21,12 @@ defaults:
     path: ''
     type: posts
   values:
-    permalink: "/journal/:title/"
-    layout: entries
-    is_dark: true
-    is_fixed: true
-- scope:
-    path: ''
-    type: work
-  values:
-    permalink: "/:collection/:title/"
-    layout: project
-    class: work
-- scope:
-    path: work.markdown
-    type: pages
-  values:
-    permalink: "/work"
-    layout: work
+    permalink: "/posts/:title/"
+    layout: posts
 email: jrandallwinton@gmail.com
-description: Multi-disciplined creative living and working in Northern California.
+description: Please take a few minutes to share your experience by posting a review for our business.
 baseurl: 
-url: https://jessewinton.works
+url: https://onedayreviews.com
 markdown: kramdown
 sass:
   style: compressed

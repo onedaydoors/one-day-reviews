@@ -9,13 +9,3 @@ social:
 - url: https://twitter.com/thejessewinton
   weight: 1
   title: Twitter
-main:
-- weight: 1
-  title: Work
-  url: "/work"
-- weight: 2
-  title: About
-  url: "/about"
-- url: mailto:jrandallwinton@gmail.com?subject=Project Inquiry
-  weight: 3
-  title: Contact
