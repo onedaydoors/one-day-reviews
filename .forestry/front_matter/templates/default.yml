@@ -2,34 +2,42 @@
 label: Default
 hide_body: true
 fields:
-- name: hero_image
-  type: file
-  config:
-    maxSize: 64
-  label: Hero Image
-- name: blocks
-  type: blocks
-  label: Blocks
-  template_types:
-  - heading
-  - text-block
+- name: review_aggregate
+  type: field_group_list
+  fields:
+  - name: svg
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
+    label: SVG
+    description: Paste the code for the SVG icon here.
+  - name: label
+    type: text
+    config:
+      required: false
+    label: Label
+    description: The label for the review aggregate i.e. Yelp, Google Business etc.
+  - name: review_url
+    type: text
+    config:
+      required: false
+    label: Review URL
+    description: Enter the URL to the review page.
+  - name: button_label
+    type: text
+    config:
+      required: false
+    label: Button Label
+    description: The label on the button. If nothing is entered, the default "Leave
+      a Review" will be displayed.
   config:
     min: 
     max: 
-- name: page_type
-  type: select
-  default: []
-  config:
-    required: false
-    options:
-    - split
-    - fullwidth
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Page Type
+    labelField: 
+  label: Review Aggregate
 pages:
-- about.markdown
 - index.markdown
