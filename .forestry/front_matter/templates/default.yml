@@ -37,7 +37,7 @@ fields:
   config:
     min: 
     max: 
-    labelField: 
+    labelField: label
   label: Review Aggregate
 pages:
 - index.markdown
