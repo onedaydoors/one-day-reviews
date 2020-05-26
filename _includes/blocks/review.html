@@ -1,2 +1,13 @@
-<div class="block {% if forloop.index <=1 %}first{% endif %}">
-</div>  
+<a href='{{ block.review_url }}'>
+    <div class="block {% if forloop.index <=1 %}first{% endif %}">
+        <div class='icon'>{{ block.svg }}</div>
+        <div class='label'>{{ block.label }}</div>
+        <div class='button' >
+            {% if block.button_label != '' %}
+                {{ block.button_label }}
+            {% else %}
+                Leave a Review
+            {% endif %}
+        </div>
+    </div>  
+</a>
