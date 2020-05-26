@@ -20,16 +20,6 @@ fields:
 - name: review_aggregate
   type: field_group_list
   fields:
-  - name: svg
-    type: textarea
-    default: ''
-    config:
-      required: false
-      wysiwyg: true
-      schema:
-        format: html-blocks
-    label: SVG
-    description: Paste the code for the SVG icon here.
   - name: label
     type: text
     config:
@@ -49,6 +39,16 @@ fields:
     label: Button Label
     description: The label on the button. If nothing is entered, the default "Leave
       a Review" will be displayed.
+  - name: svg
+    type: textarea
+    default: ''
+    config:
+      required: false
+      wysiwyg: true
+      schema:
+        format: html
+    label: SVG
+    description: Paste the code for the SVG icon here.
   config:
     min: 
     max: 
