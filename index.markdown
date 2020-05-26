@@ -3,7 +3,7 @@ title: Index
 date: '2017-09-08T20:14:00.000+00:00'
 layout: pages
 review_aggregate:
-- label: Google Business
+- label: Google
   review_url: https://g.page/OneDayDoorsSacramento/review?gm
   button_label: ''
   svg: "<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0
