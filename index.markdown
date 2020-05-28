@@ -14,8 +14,8 @@ review_aggregate:
   review_url: https://www.facebook.com/onedaydoors/
   button_label: ''
 page_title: How was your experience?
-page_content: Please take a few minutes to share your experience by posting a review
-  for our business.
+page_content: Thank you for the opportunity to serve you! Please take a few minutes to share your experience by posting a review
+  online.
 page_subtitle: We would like to know!
 
 ---
