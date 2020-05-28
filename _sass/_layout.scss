@@ -22,13 +22,13 @@
 				padding: 0 $gutter * 2;
 			}
 
-			header {
+			footer {
 				max-width: 250px;
 				width: 100%;
-				margin: $gutter * 3 auto $gutter * 2 0;
+				margin: $gutter * 2 auto $gutter * 2 0;
 
 				@media #{$break-large} {
-					margin-top: 0;
+	
 				}	
 			}
 
@@ -36,6 +36,17 @@
 				width: 100%;
 				margin-bottom: $gutter * 2;
 				font-size: 18px;
+
+				.title {
+					line-height: 1.2;
+					color: $brand-color;
+					margin-bottom: $gutter;
+				}
+
+				.stars {
+					margin-top: $gutter;
+					margin-bottom: $gutter * 3;
+				}
 			}
 
 			.review-link {
@@ -54,6 +65,14 @@
 				justify-content: space-between;
 				@include flex-row;
 				@include flex-align-center;
+
+				&:hover .label {
+					transform: translateX(5px);
+				} 
+
+				&:hover .button {
+					background: $dark-color;
+				}
 
 				.icon {
 					height: 20px;
@@ -78,22 +97,26 @@
 
 				.label {
 					color: $brand-color;
-					font-weight: 500;
+					font-weight: 600;
 					width: 33%; 
+					text-transform: uppercase;
 					font-size: $base-font-size + 3px;
 					text-align: left !important;
+					transition: all .3s ease-in-out;
 				}
 
 				.button {
 					background: $brand-color;
-					border-radius: $radius;
+					border-radius: $radius * 6;
 					text-align: center;
 					color: $light-color;
 					text-decoration: none !important;
 					text-transform: uppercase;
 					width: 150px;
-					height: 40px;
-					line-height: 40px;
+					height: 50px;
+					line-height: 50px;
+					box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+					transition: all .3s ease-in-out;
 
 					@media #{$break-large} {
 						width: 200px;
@@ -102,15 +125,5 @@
 			}
 		}
 	}
-}
-
-.footer {
-    width:  100%;
-	right: 0;
-	background: $light-color;
-	height: $footer-height;
-	z-index: 1;
-	padding: 0 $gutter;
-	box-sizing: border-box;
 }
   
