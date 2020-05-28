@@ -35,17 +35,27 @@
 			.top-content {
 				width: 100%;
 				margin-bottom: $gutter * 2;
+				margin-top: $gutter * 4;
 				font-size: 18px;
 
 				.title {
 					line-height: 1.2;
 					color: $brand-color;
+					font-size: $base-font-size + 18px;
 					margin-bottom: $gutter;
+
+					@media #{$break-large} {
+						font-size: $base-font-size + 36px;
+					}
 				}
 
 				.stars {
 					margin-top: $gutter;
 					margin-bottom: $gutter * 3;
+				}
+
+				@media #{$break-large} {
+					margin-top: 0;
 				}
 			}
 
