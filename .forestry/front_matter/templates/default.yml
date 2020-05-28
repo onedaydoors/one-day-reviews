@@ -8,6 +8,11 @@ fields:
     required: false
   label: Page Title
   description: The title of the page.
+- name: page_subtitle
+  type: text
+  config:
+    required: false
+  label: Page Subtitle
 - name: page_content
   type: textarea
   default: ''
