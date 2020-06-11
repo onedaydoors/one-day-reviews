@@ -24,7 +24,8 @@ defaults:
     permalink: "/posts/:title/"
     layout: posts
 email: jrandallwinton@gmail.com
-description: Please take a few minutes to share your experience by posting a review for our business.
+description: Thank you for the opportunity to serve you! Please take a few minutes
+  to share your experience by posting a review online.
 baseurl: 
 url: https://onedayreviews.com
 markdown: kramdown

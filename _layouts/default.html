@@ -2,6 +2,15 @@
 <html>
   {% include sections/head.html %}
   <body>
+    {% assign page_url = page.url %}
+  {% unless page_url contains 'github.io' %}
+  {% if jekyll.environment == 'production' %}
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T4268MR"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  {% endif %}
+  {% endunless %}
     <main class="wrapper" role="main">
       {{ content }}
     </main>
