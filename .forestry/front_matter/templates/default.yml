@@ -44,16 +44,11 @@ fields:
     label: Button Label
     description: The label on the button. If nothing is entered, the default "Leave
       a Review" will be displayed.
-  - name: svg
-    type: textarea
-    default: ''
+  - name: svg_icon
+    type: file
     config:
-      required: false
-      wysiwyg: false
-      schema:
-        format: html
-    label: SVG
-    description: Paste the code for the SVG icon here.
+      maxSize: 64
+    label: SVG Icon
   config:
     min: 
     max: 
