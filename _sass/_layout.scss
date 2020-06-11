@@ -45,7 +45,7 @@
 					margin-bottom: $gutter;
 
 					@media #{$break-large} {
-						font-size: $base-font-size + 36px;
+						font-size: $base-font-size + 25px;
 					}
 				}
 
@@ -71,7 +71,6 @@
 				width: 100%;
 				height: 100px;
 				padding: 0 $gutter;
-				border-radius: $radius;
 				justify-content: space-between;
 				@include flex-row;
 				@include flex-align-center;
@@ -88,15 +87,13 @@
 					height: 20px;
 					width: 20px;
 
+					img {
+						max-height: 100%;
+					}
+
 					@media #{$break-small} {
 						width: 30px;
 						height: 30px;
-					}
-					
-					svg {
-						fill: $dark-color;
-						height: 100%;
-						width: 100%;
 					}
 
 					@media #{$break-large} {
@@ -117,7 +114,6 @@
 
 				.button {
 					background: $brand-color;
-					border-radius: $radius;
 					text-align: center;
 					color: $light-color;
 					text-decoration: none !important;
@@ -125,7 +121,6 @@
 					width: 150px;
 					height: 50px;
 					line-height: 50px;
-					box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 					transition: all .3s ease-in-out;
 
 					@media #{$break-large} {

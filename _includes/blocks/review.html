@@ -1,6 +1,6 @@
 <a href='{{ block.review_url }}' class='review-link' target="_blank">
     <div class="block {% if forloop.index <=1 %}first{% endif %} animate-in">
-        <div class='icon'>{{ block.svg }}</div>
+        <div class='icon'><img src="{{ block.svg_icon }}"></div>
         <div class='label'>{{ block.label }}</div>
         <div class='button' >
             {% if block.button_label != '' %}
